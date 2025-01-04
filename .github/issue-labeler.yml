@@ -183,6 +183,8 @@ quizlet:
   - '/lbl:quizlet(,.*)?$/gm'
 raindrop:
   - '/lbl:raindrop(,.*)?$/gm'
+react:
+  - '/lbl:react(,.*)?$/gm'
 reddit:
   - '/lbl:reddit(,.*)?$/gm'
 rentry.co:

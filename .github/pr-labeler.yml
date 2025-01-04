@@ -91,6 +91,7 @@ pypi: styles/pypi/**/*
 pythonanywhere: styles/pythonanywhere/**/*
 quizlet: styles/quizlet/**/*
 raindrop: styles/raindrop/**/*
+react: styles/react/**/*
 reddit: styles/reddit/**/*
 rentry.co: styles/rentry.co/**/*
 searxng: styles/searxng/**/*
