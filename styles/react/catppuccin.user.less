@@ -69,8 +69,14 @@
         color: @subtext0 !important;
       }
     }
-    //
-    ///* Start styling your website here: */
+
+    //svg styling
+
+    svg {
+      color: @accent!important;
+    }
+
+    //text styling
 
     .text-primary {
       color: @text;
@@ -80,32 +86,65 @@
       color: @text;
     }
 
-    .bg-white, .bg-wash {
-      background-color: @base !important;
+    .text-gray-30 {
+      color: @subtext1;
     }
 
-    svg {
-      color: @accent!important;
+    .text-gray-50 {
+      color: @subtext0;
     }
 
-    a[aria-label="Learn React"], a[aria-label="Take the Tutorial"] {
+    .text-link, .text-link-dark {
+      color: @accent;
+    }
+
+    //hover styling
+
+    :is(.dark .dark\:hover\:text-link-dark:hover) {
+      color: @sapphire;
+    }
+
+    //border styling
+
+    .border-blue-40 {
+      border-color: @overlay1;
+    }
+
+
+    //backgrounds styling
+
+    .bg-highlight {
+      background-color: @crust;
+    }
+
+    .bg-highlight-dark {
+      background-color: @mantle;
+    }
+
+    .bg-link {
       color: @surface0;
       background-color: @accent;
-    }
-
-    a[aria-label="API Reference"] {
-      color: @text;
-      background-color: @base;
     }
 
     .bg-gradient-left, .bg-gradient-left-dark {
       background-image:conic-gradient(from 90deg at -10% 100%, @base 0deg,@mantle 90deg,@crust 1turn);
     }
 
+    .bg-gray-3, .bg-gray-5 {
+      background-color: @crust!important;
+    }
+
+    .bg-gray-80 {
+      background-color: @crust!important;
+    }
+
     .bg-gradient-right, .bg-gradient-right-dark {
       background-image: conic-gradient(from -90deg at 110% 100%, @crust 0deg, @mantle 90deg, @base 1turn);
     }
 
+    .bg-white, .bg-wash {
+      background-color: @base !important;
+    }
 
   }
 }
