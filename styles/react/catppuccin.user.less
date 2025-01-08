@@ -108,16 +108,20 @@
       color: @sapphire;
     }
 
+    .hover\:bg-gray-80:hover, .hover\:bg-gray-5:hover  {
+      background-color: @mantle;
+    }
+
     //border styling
 
     .border-blue-40 {
-      border-color: @overlay1;
+      border-color: @blue;
     }
+
 
     .border-link:hover {
       border-color: @sapphire;
     }
-
 
     //backgrounds styling
 
@@ -139,25 +143,19 @@
     }
 
     .bg-gradient-left, .bg-gradient-left-dark {
-      background-image:conic-gradient(from 90deg at -10% 100%, @base 0deg,@mantle 90deg,@crust 1turn);
+      background-image:conic-gradient(from 90deg at -10% 100%, @mantle 0deg,@base 90deg,@crust 1turn);
     }
 
     .bg-gray-3, .bg-gray-5 {
       background-color: @crust;
     }
 
-    :hover {
-      .bg-gray-80 {
-        background-color: @base;
-      }
-
-    }
     .bg-gray-80 {
       background-color: @crust;
     }
 
     .bg-gradient-right, .bg-gradient-right-dark {
-      background-image: conic-gradient(from -90deg at 110% 100%, @crust 0deg, @mantle 90deg, @base 1turn);
+      background-image: conic-gradient(from -90deg at 110% 100%, @crust 0deg, @base 90deg, @mantle 1turn);
     }
 
     .bg-white, .bg-wash {
