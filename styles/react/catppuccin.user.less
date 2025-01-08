@@ -94,13 +94,17 @@
       color: @subtext0;
     }
 
+    .text-tertiary, .text-tertiary-dark {
+      color: @subtext0;
+    }
+
     .text-link, .text-link-dark {
       color: @accent;
     }
 
     //hover styling
 
-    :is(.dark .dark\:hover\:text-link-dark:hover) {
+    .hover\:text-link:hover, .text-link:hover, .text-link-dark:hover {
       color: @sapphire;
     }
 
@@ -110,8 +114,16 @@
       border-color: @overlay1;
     }
 
+    .border-link:hover {
+      border-color: @sapphire;
+    }
+
 
     //backgrounds styling
+
+    .bg-card-dark, .bg-card {
+      background-color: @surface0;
+    }
 
     .bg-highlight {
       background-color: @crust;
@@ -131,11 +143,17 @@
     }
 
     .bg-gray-3, .bg-gray-5 {
-      background-color: @crust!important;
+      background-color: @crust;
     }
 
+    :hover {
+      .bg-gray-80 {
+        background-color: @base;
+      }
+
+    }
     .bg-gray-80 {
-      background-color: @crust!important;
+      background-color: @crust;
     }
 
     .bg-gradient-right, .bg-gradient-right-dark {
