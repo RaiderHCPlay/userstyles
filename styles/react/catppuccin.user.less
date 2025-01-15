@@ -94,8 +94,8 @@
       color: @subtext0;
     }
 
-    .text-green-60, .text-green-40 {
-      color: @accent;
+    .text-green-60, .text-green-40, .text-yellow-50, .text-yellow-40, .text-purple-30, .text-purple-50 {
+      color: @mantle;
     }
 
     .text-tertiary, .text-tertiary-dark {
@@ -187,8 +187,45 @@
       background-color: @crust;
     }
 
+    .color-divs(@divColor, @bgLinkColor) {
+
+      background-color: @divColor;
+
+      svg {
+        color: @mantle!important;
+      }
+
+      p {
+        color: @mantle;
+      }
+
+      color: @mantle;
+
+      .text-primary {
+        color: @mantle;
+      }
+
+      //.text-link {
+      //  color: @overlay2;
+      //}
+
+      .bg-link {
+        background-color: @bgLinkColor;
+      }
+
+
+    }
+
     .bg-green-5, .bg-green-60 {
-      background-color: @surface2;
+      .color-divs(@green, @teal);
+    }
+
+    .bg-yellow-5, .bg-yellow-60 {
+      .color-divs(@peach, @yellow);
+    }
+
+    .bg-purple-5, .bg-purple-60 {
+      .color-divs(@mauve, @lavender);
     }
 
     .bg-gradient-right, .bg-gradient-right-dark {
