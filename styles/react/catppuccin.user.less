@@ -94,7 +94,7 @@
       color: @subtext0;
     }
 
-    .text-green-60, .text-green-40, .text-yellow-50, .text-yellow-40, .text-purple-30, .text-purple-50 {
+    .text-green-60, .text-green-40, .text-yellow-50, .text-yellow-40, .text-purple-30, .text-purple-50, .text-blue-50, .text-blue-40 {
       color: @mantle;
     }
 
@@ -205,9 +205,9 @@
         color: @mantle;
       }
 
-      //.text-link {
-      //  color: @overlay2;
-      //}
+      .text-link {
+        color: @bgLinkColor;
+      }
 
       .bg-link {
         background-color: @bgLinkColor;
@@ -217,7 +217,7 @@
     }
 
     .bg-green-5, .bg-green-60 {
-      .color-divs(@green, @teal);
+      .color-divs(@green, @sapphire);
     }
 
     .bg-yellow-5, .bg-yellow-60 {
@@ -226,6 +226,10 @@
 
     .bg-purple-5, .bg-purple-60 {
       .color-divs(@mauve, @lavender);
+    }
+
+    .bg-blue-10, .bg-blue-60 {
+      .color-divs(@blue, @sky);
     }
 
     .bg-gradient-right, .bg-gradient-right-dark {
