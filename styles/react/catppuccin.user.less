@@ -120,7 +120,11 @@
       background-color: @crust;
     }
 
-      //code stylizing
+    //code stylizing
+
+    a > code {
+      color: @sapphire !important;
+    }
 
     .sp-wrapper {
       --sp-colors-accent: @accent;
@@ -164,6 +168,10 @@
 
     .bg-highlight-dark {
       background-color: @mantle;
+    }
+
+    .bg-github-highlight {
+      background-color: @surface1;
     }
 
     .bg-link {
@@ -217,15 +225,15 @@
     }
 
     .bg-green-5, .bg-green-60 {
-      .color-divs(@green, @sapphire);
+      .color-divs(@green, @red);
     }
 
     .bg-yellow-5, .bg-yellow-60 {
-      .color-divs(@peach, @yellow);
+      .color-divs(@peach, @red);
     }
 
     .bg-purple-5, .bg-purple-60 {
-      .color-divs(@mauve, @lavender);
+      .color-divs(@mauve, @flamingo);
     }
 
     .bg-blue-10, .bg-blue-60 {
