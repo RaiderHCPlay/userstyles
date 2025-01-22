@@ -19,6 +19,8 @@
 
 @-moz-document domain("react.dev") {
 
+
+  // change flavor depending on switch toggle
   html.dark {
     #catppuccin(@darkFlavor);
   }
@@ -90,6 +92,10 @@
       color: @subtext1;
     }
 
+    .text-red-50, .text-red-30 {
+      color: @mantle!important;
+    }
+
     .text-gray-50 {
       color: @subtext0;
     }
@@ -151,6 +157,10 @@
       border-color: @blue;
     }
 
+    .border-gray-300, .bg-gray-90 {
+      border-color: @overlay2;
+    }
+
 
     .border-link:hover {
       border-color: @sapphire;
@@ -187,12 +197,12 @@
       background-color: @crust;
     }
 
-    .bg-gray-30 {
+    .bg-gray-30, .bg-gray-300, .bg-gray-70 {
       background-color: @surface0;
     }
 
-    .bg-gray-80 {
-      background-color: @crust;
+    .bg-gray-80, .bg-gray-200 {
+      background-color: @mantle;
     }
 
     .color-divs(@divColor, @bgLinkColor) {
@@ -238,6 +248,10 @@
 
     .bg-blue-10, .bg-blue-60, .bg-blue-40 {
       .color-divs(@blue, @sky);
+    }
+
+    .bg-red-30 {
+      background-color: @red;
     }
 
     .bg-gradient-right, .bg-gradient-right-dark {
